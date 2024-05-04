@@ -33,7 +33,7 @@ nav li{
 }
 
 
-img{
+.logoImage{
     height: 320px;
     width: 410px;
     margin: 80px 10px 30px 125px;
@@ -42,5 +42,9 @@ img{
 
 .nameHeader{
     font-size: 45px;
-    margin: -34px 0px 0px 180px
+    margin: -34px 0px 0px 180px;
+}
+
+#svgHeader{
+    margin: 25px 0px 0px 195px;
 }

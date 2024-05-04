@@ -20,7 +20,14 @@ nav li{
     margin: 6px;
     color:aliceblue;
     font-size: 20px;
+    display: inline-block;
+    margin: 0 40px;
 }
 .navli{
     float: left;
+}
+
+.navli:hover{
+    text-decoration: underline;
+    color: rgb(208, 139, 139);
 }

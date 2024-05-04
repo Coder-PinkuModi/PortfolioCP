@@ -1,0 +1,21 @@
+*{ /*to make things simple making every elements padding and margin 0 px */
+    padding: 0px;
+    margin: 0px;;
+}
+.header{
+    height: 600px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(143, 215, 135, 0.829);
+    border: 2px solid rgb(15, 9, 9);
+}
+.nav{
+    text-align: center;
+    list-style: none;
+}
+nav li{
+    margin: 6px;
+    
+}
+.navli{
+    float: left;
+}

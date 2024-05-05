@@ -2,6 +2,8 @@
     padding: 0px;
     margin: 0px;
 }
+
+/* Header files section editimg */
 .header{
     height: 600px;
     color: aliceblue;
@@ -10,7 +12,7 @@
     
     display: flex;
     justify-content: center;
-   
+    margin-bottom: 25px;
 }
 .nav{
     text-align: center;
@@ -48,3 +50,38 @@ nav li{
 #svgHeader{
     margin: 25px 0px 0px 195px;
 }
+
+/* About me section Styling */
+
+.about{
+   
+}
+
+#aboutHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.aboutSection{
+    display:flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.descriptionAbout{
+    font-size: 20px;
+    height: 100px;
+    width: 30%;
+    padding:10px 20px;
+    background-color: rgb(241, 240, 235);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+
+.headingAbout{
+    margin-bottom: 10px;
+}
+

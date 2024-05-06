@@ -1,6 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
 *{ /*to make things simple making every elements padding and margin 0 px */
     padding: 0px;
     margin: 0px;
+}
+body{
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header files section editimg */
@@ -14,31 +21,51 @@
     justify-content: center;
     margin-bottom: 25px;
 }
-.nav{
+.header div nav{
+    display: block;
+    align-items: center;
+    background-color: rgb(0, 0, 0);;
+}
+.nav {
     text-align: center;
     list-style: none;
+    float: left;
+    margin: 0; /* Add this line to remove default margin */
 }
+
 nav li{
     margin: 6px;
-    color:aliceblue;
-    font-size: 20px;
+    font-size: 28px;
     display: inline-block;
     margin: 0 40px;
-}
-.navli{
-    float: left;
+
 }
 
-.navli:hover{
-    text-decoration: underline;
-    color: rgb(208, 139, 139);
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position:relative;
 }
 
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background-color: #ff004f;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s
+}
+
+nav ul li a:hover::after{
+ width:100%;
+}
 
 .logoImage{
     height: 320px;
     width: 410px;
-    margin: 80px 10px 30px 125px;
+    margin: 80px 10px 30px 160px;
     border-radius: 50%;
 }
 
@@ -53,31 +80,151 @@ nav li{
 
 /* About me section Styling */
 
-#aboutHeading{
+.sub-title{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .aboutSection{
     display:flex;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-evenly;
 }
 
-.descriptionAbout{
-    font-size: 20px;
-    height: 100px;
-    width: 30%;
-    padding:10px 20px;
-    background-color: rgb(241, 240, 235);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 2%;
+/* ---------------column-1--------------- */
+.column-1{
+    flex-basis: 40%;
+    height: 565px;
+    font-size:20px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid #f3f0f0f1;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 15px;
 }
+
+#question{
+    font-size: 20px;
+    font-weight: 550;
+    color: #2c66b3;
+}
+
+#cachyIntro{
+    font-size: 25px;
+    display: block;
+    margin-bottom:4px;
+}
+
+.extraAbout{
+    margin-top: 15px;
+}
+
+.extraAbouthead{
+    font-weight: 600;
+}
+
+
+/* ---------------column-2--------------- */
+
+.column-2{
+    flex-basis: 50%;
+    height: 565px;
+    font-size:20px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid #f3f0f0f1;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
 
 .headingAbout{
+    margin-bottom: 15px;
+}
+
+.skills-icon{
+    width:90px;
+}
+
+.skillHeading{
+    margin-left: 10px;
+    margin-top:6px;
+    margin-bottom: 4px;
+}
+
+.skill-class{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ------------ Services ----------- */
+.services{
+    margin-top: 25px;
+    margin-bottom: 15px; ;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-Development{
+    height: 257px;
+    width: 370px;
+    padding:3px 15px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid #f3f0f0f1;
+    border-radius: 10px;
+}
+
+#webDev{
+    display:flex;
+    justify-content: center ;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.webpara{
+    font-size: 20px;
+}
+
+/* ------------------- contact------------ */
+
+.contact{
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
+.contactContainer{
+    height: 200px;
+    width:100%;
+    padding-left: 10px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid #f3f0f0f1;
+    border-radius: 10px;
+}
+
+.contact-svg{
+    display:inline-flex ;
+    margin-top: 5px;
+}
+
+#contactme{
+    font-size: 29px;
+    font-weight: 600;
+}
+.icon-contact{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.contact-icons{
+    height: 70px;
+    width:95px;
+}

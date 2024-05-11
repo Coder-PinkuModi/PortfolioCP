@@ -228,3 +228,42 @@ nav ul li a:hover::after{
     height: 70px;
     width:95px;
 }
+
+
+
+/* -----------------------Responsive website making for Phones------------------- */
+
+@media screen and (max-width: 600px) {
+
+    body{
+        width:100%;
+        display: block;
+        align-items: center;
+    }
+    /* -----------Header Section-------------- */
+    .header{
+        width:100%;
+
+    }
+    .nav li{
+        display:none;
+    }
+    .logoImage{
+        width: 50%;
+    }
+
+
+
+
+
+    /* ----------------About me ------------------ */
+    .aboutSection{
+        display: block;
+    }
+
+    .column-1{
+        height:fit-content;
+        margin-bottom: 25px;
+    }
+
+}

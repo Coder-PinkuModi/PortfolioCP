@@ -6,6 +6,7 @@ html{
     margin: 0px;
 }
 html,body{
+    width: 100vw;
     font-family: Poppins, sans-serif;
     overflow-x: hidden;
 }
